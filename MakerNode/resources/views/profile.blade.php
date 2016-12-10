@@ -5,6 +5,9 @@
 @endsection
 
 @section('content')
+    <div class="spacer">
+        <br><br>
+    </div>
     <div class="row">
         <div class="col s12 m7 l3">
             <div class="card medium">

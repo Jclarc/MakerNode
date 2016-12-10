@@ -11,19 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','HomeController@index');
+Route::get('/home','HomeController@index');
 
-Route::get('/home', function (){
-    return view('home');
-});
+Route::get('/logout',function (){return view('logout');});
 
-Route::get('/profile', function(){
-    return view('profile');
-});
+Route::get('/profile','ProfileController@index');
 
+Route::get('/forum','ForumController@index');
+
+Auth::routes();
+
+/*
+Route::group(['middleware' => ['web']], function () {
+    // Put all your routes inside here.
+});
 Route::get('/forum', function (){
     return view('master');
 });
-
+*/

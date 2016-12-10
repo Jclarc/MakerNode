@@ -19,7 +19,7 @@
     <div class="footer-copyright">
         <div class="container light-green-text text-accent-2">
             © 2014 Copyright Text
-            <a class="light-green-text text-accent-2 right" href="#!">Log Out</a>
-        </div>
+            <a class="light-green-text text-accent-2 right" href="{{ url('/logout') }}">Log Out</a>
+          </div>
     </div>
 </footer>
