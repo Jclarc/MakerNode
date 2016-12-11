@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>MakerNode</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -62,6 +62,43 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            <style>
+             body {
+                 display: flex;
+                 min-height: 100vh;
+                 flex-direction: column;
+                 height: 1000px;
+             }
+
+            main {
+                flex: 1 0 auto;
+            }
+            .btn{
+                background-color: #B6ED40;
+            }
+            .lime{
+                color:#b2ff59;
+                background-color: #616161;
+            }
+            input:not([type]):focus:not([readonly]),
+            input[type=text]:focus:not([readonly]),
+            input[type=password]:focus:not([readonly]),
+            input[type=email]:focus:not([readonly]),
+            input[type=url]:focus:not([readonly]),
+            input[type=time]:focus:not([readonly]),
+            input[type=date]:focus:not([readonly]),
+            input[type=datetime]:focus:not([readonly]),
+            input[type=datetime-local]:focus:not([readonly]),
+            input[type=tel]:focus:not([readonly]),
+            input[type=number]:focus:not([readonly]),
+            input[type=search]:focus:not([readonly]),
+            textarea.materialize-textarea:focus:not([readonly]) {
+                border-bottom: 1px solid #b2ff59;
+                box-shadow: 0 1px 0 0 #b2ff59;
+            }
+            nav ul a {
+                color:#b2ff59;
+            }
         </style>
     </head>
     <body>
@@ -79,7 +116,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    MakerNode
                 </div>
 
                 <div class="links">

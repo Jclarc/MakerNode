@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/profile','ProfileController@index');
+
+Route::get('/forum','ForumController@index');
+
+Route::get('/logout',function(){
+    return view('logout');
+});
