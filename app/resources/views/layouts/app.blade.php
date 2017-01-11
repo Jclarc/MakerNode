@@ -27,7 +27,7 @@
 
     <style>
         body {
-            font-size: 10px;
+            font-size: 14px;
             display: flex;
             min-height: 100vh;
             flex-direction: column;
@@ -65,16 +65,24 @@
         }
         nav ul a {
             color:#b2ff59;
+            font-size: 2rem;
+        }
+        .navbar-brand{
+            font-size: 4rem;
+        }
+        .card{
+            height:450px;
+            width:550px;
         }
 
     </style>
+    @yield('css')
 </head>
     <main>
         <body>
         <div id="app">
             <nav class="nav-wrapper grey darken-2">
                 <div class="container">
-                        <!-- Branding Image -->
                         <a class="navbar-brand light-green-text text-accent-2" href="{{ url('/') }}">
                             {{ config('app.name', 'MakerNode') }}
                         </a>
@@ -92,4 +100,5 @@
                 <!--Import jQuery before materialize.js-->
                 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+@yield('js')
 </html>

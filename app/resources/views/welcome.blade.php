@@ -127,12 +127,9 @@
         <div class="container">
             <div class="center-align">
                 <div class="card grey darken-2 hoverable">
-                    <div class="card-image">
-                        <img src="http://lorempixel.com/250/250/technics" height="250" width="250">
-                    </div>
                     <div class="card-content light-green-text text-accent-2">
-                        <p class="text-bold">I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                        <p class="text-bold flow-text">Welcome to MakerNode. <br>
+                            The site is designed to be a creation haven for developers/engineers and the like to colaborate, discuss, solve problems or conficts and compare on the ever expanding field of <br>IOT devices (Internet of Things).<br> So dive in get discussing and creating!</p>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a  class="light-green-text text-accent-2" href="{{ url('/home') }}">Home</a></li>
         <li><a class="light-green-text text-accent-2" href="{{ url('/profile') }}">Profile</a></li>
-        <li><a class="light-green-text text-accent-2" href="{{ url('/forum') }}">Forums</a></li>
+        <li><a class="light-green-text text-accent-2" href="{{ url('/forums') }}">Forums</a></li>
         @if (Auth::guest())
                 <li><a class="light-green-text text-accent-2" href="{{ url('/login') }}">Login</a></li>
                 <li><a class="light-green-text text-accent-2" href="{{ url('/register') }}">Register</a></li>
