@@ -12,6 +12,9 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-
+        //DO NOt USE ME
+        "home",
+        "login",
+        "register",
     ];
 }

@@ -9,7 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
         <!-- Styles -->
         <style>
             html, body {
@@ -102,11 +103,12 @@
         </style>
     </head>
     <body>
+        <main>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Enter</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
@@ -115,18 +117,34 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md light-green-text text-accent-2">
                     MakerNode
                 </div>
+            </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+        </div>
+
+        <div class="container">
+            <div class="center-align">
+                <div class="card grey darken-2 hoverable">
+                    <div class="card-image">
+                        <img src="http://lorempixel.com/250/250/technics" height="250" width="250">
+                    </div>
+                    <div class="card-content light-green-text text-accent-2">
+                        <p class="text-bold">I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
                 </div>
             </div>
+
+
         </div>
+
+
+        </main>
     </body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
 </html>

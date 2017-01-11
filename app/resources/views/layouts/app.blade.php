@@ -19,13 +19,15 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
+        window.Laravel =<?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
 
+
     <style>
         body {
+            font-size: 10px;
             display: flex;
             min-height: 100vh;
             flex-direction: column;
@@ -41,6 +43,9 @@
         .lime{
             color:#b2ff59;
             background-color: #616161;
+        }
+        li{
+            font-size: 20px;
         }
         input:not([type]):focus:not([readonly]),
         input[type=text]:focus:not([readonly]),
