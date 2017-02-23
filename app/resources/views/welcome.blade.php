@@ -47,7 +47,8 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 10rem;
+                font-weight: bold;
             }
 
             .links > a {
@@ -63,7 +64,6 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            <style>
              body {
                  display: flex;
                  min-height: 100vh;
